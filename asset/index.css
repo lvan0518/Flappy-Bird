@@ -1,0 +1,114 @@
+#game {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url(../images/sky.png);
+}
+.bird {
+    position: absolute;
+    top: 235px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    /* background-color: red; */
+    background-image: url(../images/birds.png);
+}
+.start {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 295px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bolder;
+    width: 200px;
+    height: 60px;
+}
+.start-blue {
+    font-size: 36px;
+    color: #0099ff;
+}
+.start-white{
+    font-size: 24px;
+    color: #fff;
+}
+.score {
+    font-weight: bolder;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: .7;
+}
+.end {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    /* z-index: 2; */
+    color: red;
+}
+.end .over {
+    font-weight: bolder;
+    font-size: 35px;
+    color: red;
+}
+.end , .result,
+.end ,.fina-score{
+    color: #ff0;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.end .rank-list {
+    margin-top: 20px;
+    color: #0099ff;
+    text-align: center;
+    text-align: left;
+}
+.end .rank-item {
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    line-height: 30px;
+    font-size: 13px;
+}
+.end .rank-degree {
+    display: inline-block;
+    background-color: #8eb9f5;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #fff;
+}
+.end .rank-degree.first{
+    background-color: red;
+}
+.end .rank-degree.second {
+    background-color: #ff9547;
+}
+.end .rank-degree.third {
+    background-color: #ffac38;
+}
+.end .rank-item .rank-score {
+    text-align: center;
+    width: 30px;
+    display: inline-block;
+}
+.end .restart {
+    color: #0099ff;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
