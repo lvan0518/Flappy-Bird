@@ -3,6 +3,7 @@
     width: 100%;
     height: 600px;
     background: url(../images/sky.png);
+    background-position-x: 0 ;
 }
 .bird {
     position: absolute;
@@ -13,6 +14,7 @@
     height: 30px;
     /* background-color: red; */
     background-image: url(../images/birds.png);
+    transition: top .3s linear;
 }
 .start {
     position: absolute;
@@ -24,6 +26,8 @@
     font-weight: bolder;
     width: 200px;
     height: 60px;
+    cursor: pointer;
+    transition: all .3s linear ;
 }
 .start-blue {
     font-size: 36px;
@@ -40,6 +44,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    display: none;
 }
 .mask {
     position: absolute;
@@ -49,6 +54,7 @@
     right: 0;
     background-color: #000;
     opacity: .7;
+    display: none;
 }
 .end {
     position: absolute;
@@ -58,6 +64,7 @@
     transform: translateX(-50%);
     /* z-index: 2; */
     color: red;
+    display: none
 }
 .end .over {
     font-weight: bolder;
